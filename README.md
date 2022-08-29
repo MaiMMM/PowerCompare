@@ -22,6 +22,12 @@ If you are new to this, use the steps below:
  4. Open this link in your browser(http://localhost/PowerCompare/)
  5. (Optional) There is live server web extension for PHP, you can find tutorial on Youtube.
 
+#  HOW TO USE
+
+ 1. Click CHOOSE FILE.
+ 2. Upload up to 5 .fit files collected from different powermeters from the same ride.
+ 3. Click SUBMIT.
+
 
 #  TO DO's
 
