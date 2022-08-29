@@ -1,6 +1,15 @@
 # Mai's Power Meter Comparison Tool
 
-This Web-based tool compares two or more .fit files and plots a graph with power or other data. [Live version.](https://maigod.net/PowerCompare/)
+[Maigod.net/PowerCompare](maigod.net/powercompare)
+
+# Overview
+
+### For cyclists:
+This Web-based tool compares two or more .fit files and plots a graph with power or other data from these files. 
+
+
+### For Non cyclists:
+Power is a metric for measuring the effort a cyclist outputs. The equipment that measures power is called power meter which sometimes have accuracy issue. This website uses a graph to compare multiple dataset collected from multiple power meters to validate accuracy. 
 
 #  Configuration(for contributors)
 Feel free to use any PHP running environment you like. 
