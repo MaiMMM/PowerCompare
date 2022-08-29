@@ -19,7 +19,7 @@ body{
   position: absolute;
 }
 #mai_logo{
-  margin-top: -170px;
+  margin-top: -140px;
   margin-left: -30px;
   position: absolute;
   width: 300px;
@@ -60,7 +60,7 @@ body{
     display: flex;
     justify-content: center;
     z-index: 3;
-    margin-bottom: 35px;
+    margin-bottom: 10px;
 
 }
 
@@ -94,8 +94,6 @@ body{
 }
 
 
-
-
 @media (min-width: 768px) {
   .offset {
     min-width: 170px;
@@ -103,8 +101,14 @@ body{
 }
 
 #postFit{
-  margin-top: 20px;
-  /* position: relative; */
+  text-align: center;
+  border: 2px dashed transparent;
+  border-color:"transparent";
+  border-radius: 20px;
+  width: 480px;
+  margin-top: 0px;
+  margin: auto;
+  padding: 20px;
 }
 
 
@@ -162,8 +166,6 @@ body{
 
 #upload_label:hover,#demo:hover{
   background-color: #d3d0d0;
-  border-radius: 0.3rem;
-  color:black;
 }
 
 #demo{
@@ -196,7 +198,13 @@ body{
   margin-top: 50px;
 }
 
+
+.function_button{
+  
+}
+
 .function_button.offset,#zoom{
+  
   font-family: 'Oswald', sans-serif;
   background-color: rgb(102, 102, 102);
   color:white;
@@ -216,10 +224,12 @@ body{
 }
 
 .function_button.offset:hover{
+  transition: opacity .25s;
   opacity: 80%;
   cursor: pointer;
 }
 #zoom:hover{
+  transition: opacity .25s;
   opacity: 80%;
   cursor: pointer;
 }
@@ -253,4 +263,10 @@ input[value="change"]{
   width: 200px;
   margin-left:25px;
   margin-top:15px;
+}
+
+#myChart{
+  display: none;
+}
+#myChartCadence{
 }

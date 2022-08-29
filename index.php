@@ -1,10 +1,18 @@
+<!-- Chris He, 2022 -->
+<!-- h1119623520@gmail.com -->
+<!-- Potential Features to be Added: -->
+<!-- 1. dark mode -->
+<!-- 2. support for other data type (e.g. candence / heart rate .. ) -->
+<!-- 3. cookie for storing past ride, update privacy policy -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PM Compare</title>
+    <link rel="icon" type="image/x-icon" href="/Resource/imgs/Invert_MaiLogo.png">
     <link rel = "stylesheet" href = "Resource/css/style.css">
 
     <script type="text/javascript" src="Resource/js/jscript.js"></script>
@@ -18,21 +26,21 @@
     <?php include 'inc/header.php'; ?> 
 
     <div id="mai_logo_container">
-        <img src="../Resource/MaiLogo.PNG" id="mai_logo" >
+        <img src="Resource/imgs/MaiLogo.PNG" id="mai_logo" >
     </div>
 
     
-    <div id = "upload">
-        <form id = "postFit">
-                <input type="file" multiple = "multiple" name = "file" id = "upload_file" accept=".fit" hidden/>
-                <label for = "upload_file" id = "upload_label"> Choose File</label>
-                <span id="file-chosen">File Type: fit / Up to 5 Files</span>
+    <div id = "upload" class = "drag">
+        <form id = "postFit" >
+                <input id = "upload_file" type="file" multiple = "multiple" name = "file"  accept=".fit" hidden />
+                <label id = "upload_label" for = "upload_file"   > Choose File</label>
+                <span id="file-chosen"  >File Type: fit / Up to 5 Files</span>
 
                 <!-- <button id = "demo" onclick = "try_demo()">TRY DEMO </button> -->
 
-                <div class="button-area"> 
-                    <input type="submit" class = "submit" name = "submit"> 
-                    <span id = "ss",name = "ss"> Uploading... </span>
+                <div class="button-area" > 
+                    <input id = "file_submit" type="submit" class = "submit" name = "submit" > 
+                    <span id = "ss",name = "ss" > Uploading... </span>
                 </div>
         </form>
     </div>
@@ -40,6 +48,7 @@
 
     <div id = "chart_area">
         <canvas id="myChart" width="400" height="130" ></canvas>
+        <!-- <canvas id="myChartCadence" width="400" height="130" ></canvas> -->
     </div>
 
     <div id = "avg_power">

@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 #footer_container{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
 }
 #footer_container{
     background: #fcfcfc;
@@ -16,23 +18,22 @@ footer{
     bottom: 0;
     margin-top: 150px;
     /* font-family: "Open Sans"; */
-    padding-top: 40px;
+    padding-top: 30px;
     color: #fff;
 }
 .footer-content{
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     text-align: center;
-    height:150px
+    height:90px
 }
 .footer-content h3{
+    margin-top: -6.5px; /* how far Mai's powe meter from top*/
     font-size: 1.8rem;
     font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
-    margin-bottom: 15px;
+    /* line-height: 3rem; */
+    margin-bottom: 10px;
 }
 .footer-content p{
     max-width: 500px;
@@ -41,12 +42,14 @@ footer{
     font-size: 14px;
 }
 .socials{
+    position: absolute;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 3rem 0;
-    margin-left: -40px;
+    /* margin: 1 rem 0 2rem 0; */
+    margin-top: 30px;
+    margin-left: 340px;
 }
 .socials li{
     margin: 0 10px;
@@ -61,13 +64,13 @@ footer{
 
 }
 .socials a:hover i{
-    color: aqua;
+    color: rgb(11, 15, 15);
 }
 
 .footer-bottom{
     background: #000;
     width: 100vw;
-    padding: 20px 0;
+    padding: 1px 0;
     text-align: center;
 }
 .footer-bottom p{

@@ -55,7 +55,8 @@
     // converting data to json
     if($all_test_passed){
         $device_info_array = array();
-        $avg_power_array = array();
+
+        // ------------------------------------------------PRINT POWER -----------------------------------------------------------
         for($i = 0; $i < $num_files; $i++){
             $pFFA = new adriangibbons\phpFITFileAnalysis("Resource/upload/{$fit_upload_name[$i]}");
             $power_array = $pFFA -> data_mesgs['record']['power'];
@@ -65,18 +66,19 @@
             
             
             $manu = $pFFA->enumData('manufacturer',$pFFA->data_mesgs["file_id"]["manufacturer"]);
-            // $prod = $pFFA->product();
-            $avg_power = $pFFA->powerMetrics(1);
             array_push($device_info_array, $manu);
-            array_push($avg_power_array, $avg_power);
-            
-            
         }
-
+        // ------------------------------------------------PRINT DEVICE -----------------------------------------------------------
         echo "device_info";
         echo json_encode($device_info_array);
-        // echo "avg_power";
-        // echo json_encode($avg_power_array);
+
+        // ------------------------------------------------PRINT CADENCE -----------------------------------------------------------
+        for($i = 0; $i < $num_files; $i++){
+            $pFFA = new adriangibbons\phpFITFileAnalysis("Resource/upload/{$fit_upload_name[$i]}");
+            $cadence_array = $pFFA -> data_mesgs['record']['cadence'];
+            echo "cadence_json";
+            echo json_encode($cadence_array);
+        }
 
         //remove file from system
         $d_files = glob('Resource/upload/*'); // get all file names
@@ -85,6 +87,8 @@
                 unlink($d_file); // delete file
             }
         }
+
+        // ------------------------------------------------PRINT ENDING -----------------------------------------------------------
     }
 
 ?>
