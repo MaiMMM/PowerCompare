@@ -1,6 +1,6 @@
 # Mai's Power Meter Comparison Tool
 
-[Maigod.net/PowerCompare](maigod.net/powercompare)
+[Maigod.net/PowerCompare](https://maigod.net/PowerCompare)
 
 # Overview
 
